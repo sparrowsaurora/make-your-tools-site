@@ -15,6 +15,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        // Seeders
+        $this->call(KitSeeder::class);
+
+
+
         // User::factory(10)->create();
 
         User::factory()->create([
