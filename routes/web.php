@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KitController;
+use App\Http\Controllers\DocController;
 
 /**
  * The main routes.
@@ -17,13 +19,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('main');
 });
-Route::get('/kits', function () {
-    return view('kits');
-});
-Route::get('/docs', function () {
-    return view('docs');
-});
+Route::get('/kits', [KitController::class, 'index']);
+Route::get('/docs', [DocController::class, 'index']);
 Route::get('/support', function () {
     return view('support');
 });
 
+/**
+ *  Kit routes, (shop)
+ *
+ *  kits/<kitName>
+ */
+Route::get('/kits/{kit}', [KitController::class, 'show'])->name('kits.show');
