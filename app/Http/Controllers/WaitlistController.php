@@ -29,6 +29,6 @@ class WaitlistController extends Controller
             ]
         );
 
-        return redirect()->route('waitlist')->with('success', 'You\'re on the waitlist!');
+        return redirect()->route('waitlist.show')->with('success', 'You\'re on the waitlist!');
     }
 }

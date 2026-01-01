@@ -14,8 +14,10 @@
     <h1 class="text-2xl font-bold mb-4">Join the waitlist</h1>
 
     <p class="text-gray-600 mb-6">
-        Be the first to know when we launch.
+        Be the first to know when we launch and get 20% off on our first Kit
     </p>
+    {{--  could possibly make this 33%   --}}
+
 
     @if(session('success'))
         <div class="bg-green-100 text-green-800 p-3 rounded mb-4">

@@ -18,7 +18,8 @@ use App\Http\Controllers\DocController;
  */
 
 Route::get('/', function () {
-    return view('main');
+    return redirect()->route('waitlist.show');
+//    return view('main');
 });
 Route::get('/kits', [KitController::class, 'index']);
 Route::get('/docs', [DocController::class, 'index']);
