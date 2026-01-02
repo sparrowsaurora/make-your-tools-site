@@ -21,7 +21,10 @@ return new class extends Migration
             // Tracking
             $table->string('ip_address', 45)->nullable(); // IPv6 safe
             $table->string('user_agent')->nullable();
-            $table->string('source')->nullable(); // utm / page / campaign
+            $table->string('utm_source')->nullable();
+            $table->string('utm_medium')->nullable();
+            $table->string('utm_campaign')->nullable();
+            $table->string('utm_content')->nullable();
             $table->timestamp('invited_at')->nullable();
 
             // extra

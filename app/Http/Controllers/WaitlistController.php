@@ -25,7 +25,10 @@ class WaitlistController extends Controller
                 'first_name' => $validated['first_name'],
                 'ip_address' => $request->ip(),
                 'user_agent' => $request->userAgent(),
-                'source' => $request->input('source'),
+                'utm_source'   => session('utm_source'),
+                'utm_medium'   => session('utm_medium'),
+                'utm_campaign' => session('utm_campaign'),
+                'utm_content'  => session('utm_content'),
             ]
         );
 

@@ -10,11 +10,11 @@
 </head>
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
 
-<div class="bg-white p-8 rounded shadow max-w-md w-full">
+<div class="bg-white p-8 shadow max-w-md w-full rounded-xl">
     <h1 class="text-2xl font-bold mb-4">Join the waitlist</h1>
 
     <p class="text-gray-600 mb-6">
-        Be the first to know when we launch and get 20% off on our first Kit
+        Be the first to know when we launch and get 20% off on your first Kit
     </p>
     {{--  could possibly make this 33%   --}}
 

@@ -11,7 +11,10 @@ class WaitlistEntry extends Model
         'email',
         'ip_address',
         'user_agent',
-        'source',
         'invited_at',
+        'utm_source',
+        'utm_medium',
+        'utm_campaign',
+        'utm_content',
     ];
 }
