@@ -34,4 +34,22 @@ class WaitlistController extends Controller
 
         return redirect()->route('waitlist.show')->with('success', 'You\'re on the waitlist!');
     }
+
+    public function bySource()
+    {
+        $waitlist = WaitlistEntry::select('utm_source')
+            ->groupBy('utm_source')
+            ->selectRaw('count(*) as total')
+            ->orderByDesc('total')
+            ->get();
+
+        return $waitlist;
+    }
+
+    public function listAll()
+    {
+        $entries = WaitlistEntry::all(['id', 'first_name' ,'email']);
+        return $entries;
+
+    }
 }

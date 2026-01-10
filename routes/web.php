@@ -37,6 +37,9 @@ Route::get('/support', function () {
 Route::get('/waitlist', [WaitlistController::class, 'show'])->name('waitlist.show');
 Route::post('/waitlist', [WaitlistController::class, 'store'])->middleware('throttle:10,1')->name('waitlist.store');
 
+//Route::get('/waitlist/sources', [WaitlistController::class, 'bySource'])->name('waitlist.sources');
+//Route::get('/waitlist/list', [WaitlistController::class, 'listAll'])->name('waitlist.list');
+
 /**
  *  Kit routes, (shop)
  *
