@@ -8,12 +8,12 @@
     {{-- Optional Tailwind CDN for quick styling --}}
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+<body class="bg-gray-900 min-h-screen flex items-center justify-center">
 
-<div class="bg-white p-8 shadow max-w-md w-full rounded-xl">
-    <h1 class="text-2xl font-bold mb-4">Join the waitlist</h1>
+<div class="bg-gray-800 p-8 shadow max-w-md w-full rounded-xl">
+    <h1 class="text-white text-2xl font-bold mb-4">Join the waitlist</h1>
 
-    <p class="text-gray-600 mb-6">
+    <p class="text-gray-400 mb-6">
         Be the first to know when we launch and get 20% off on your first Kit
     </p>
     {{--  could possibly make this 33%   --}}
@@ -43,7 +43,7 @@
             name="first_name"
             placeholder="First name"
             required
-            class="w-full border p-3 rounded mb-3"
+            class="w-full border p-3 rounded mb-3 bg-zinc-200"
         >
 
         <input
@@ -51,14 +51,14 @@
             name="email"
             placeholder="you@example.com"
             required
-            class="w-full border p-3 rounded mb-4"
+            class="w-full border p-3 rounded mb-4 bg-zinc-200"
         >
 
         <input type="hidden" name="source" value="waitlist-page">
 
         <button
             type="submit"
-            class="w-full bg-black text-white p-3 rounded hover:bg-gray-800"
+            class="w-full bg-orange-500 text-white p-3 rounded hover:bg-orange-700"
         >
             Join waitlist
         </button>
